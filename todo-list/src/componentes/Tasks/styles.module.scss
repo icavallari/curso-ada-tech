@@ -1,0 +1,64 @@
+.container{
+    max-width: 1240px;
+    padding: 7rem 2rem 0;
+    margin: 0 auto;
+
+    form{
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+
+        div{
+
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            label{
+                font-size: 0.85rem;
+            }
+
+            input{
+                height: 40px;
+                width: 100%;
+                padding: 0 5px;
+            }
+
+        }
+
+        button{
+            height: 40px;
+            width: 150px;
+            border: none;
+            border-radius: 5px;
+            background-color: #314dae;
+            color: #fff;
+        }
+
+    }
+
+    ul{
+        list-style: none;
+        margin-top: 2rem;
+        padding: 0 1rem;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            label{
+                margin-left: 1rem;
+                font-size: 1.2rem;
+            }
+
+            input{
+                height: 1rem;
+                width: 1rem;
+            }
+
+            label.done{
+                text-decoration: line-through;
+            }
+        }
+    }
+}

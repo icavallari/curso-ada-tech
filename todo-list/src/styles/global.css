@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, select, options, textarea, button{
+    font-family: "Cairo", sans-serif;
+}

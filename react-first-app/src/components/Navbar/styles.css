@@ -1,0 +1,37 @@
+header{
+    background-color: #333;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .25);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px 2rem ;
+}
+
+header nav img{
+    width: 30px;
+    margin-right: 15px;
+}
+
+header nav .nav-brand{
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-list{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;    
+}
+header nav .nav-list li{
+    list-style-type: none;
+}
+
+header nav .nav-list a{
+    color: #fff !important;    
+}

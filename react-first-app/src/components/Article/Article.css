@@ -1,0 +1,15 @@
+article{
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 50px auto;
+    column-gap: 40px;
+}
+
+article img{
+    width: 200px;
+}
+
+article .article-infos *{
+    margin-bottom: 10px;
+}
