@@ -4,18 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Study of case
 
-Simple example of Todo List to study:
+Simple Shop to study:
 
 - Yarn
 - Typescript
 - Functional Component: React.FC
+- Redux
 - Interface
-- Context API
-- Hooks useEffect, useState, userRef, createContext, useContext
-- CSS Modules
+- Hooks useEffect, useState, useSelector, useDispatch
+- Styled-Components
 - Sass: Syntactically Awesome Style Sheets
-- Localstorage
-- ChangeEvent<HTMLInputElement>
 - JSON: JavaScript Object Notation
 - React-icons: https://react-icons.github.io/react-icons
-- Uncontrolled components concept (useRef)
