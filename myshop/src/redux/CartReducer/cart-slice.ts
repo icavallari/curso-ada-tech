@@ -14,10 +14,12 @@ export const cartSlice = createSlice({
     name: 'cart',
     reducers: {
         addProduct: (state, action)=>{
+
             state.cart = [
                 ...state.cart,
                 action.payload
             ];
+            
         },
         removeProduct: (state, action)=>{
 

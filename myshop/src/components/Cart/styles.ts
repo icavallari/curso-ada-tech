@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 interface ContainerProps{
-    showCart: boolean
+    showcart: boolean
 }
 
-export const Container = styled.aside<ContainerProps>`
+export const Container = styled.aside<Partial<ContainerProps>>`
     background-color: #fff;
     position: fixed;
-    right: ${(props) => props.showCart ? "-400px" : "0"};
+    right: ${props => props.showcart! ? "-400px" : "0"};
     top: 60px;
 
     width: 400px;

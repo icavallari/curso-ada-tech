@@ -1,20 +1,16 @@
-import { useSelector } from "react-redux";
 import * as S from "./styles";
-import { RootReducer } from "../../redux/root-reducer";
+import { Product } from "../../data/produts";
 
 interface CartProps {
   showCart: boolean;
+  cart: Product[];
 }
 
-export const Cart: React.FC<CartProps> = ({ showCart }) => {
-  const { cart } = useSelector(
-    (rootReducer: RootReducer) => rootReducer.cartReducer
-  );
-
+export const Cart: React.FC<CartProps> = ({ showCart, cart }) => {
   const total = cart.reduce((total, produto) => (total += produto.price), 0);
 
   return (
-    <S.Container showCart={showCart}>
+    <S.Container showcart={showCart}>
       <S.Title>Carrinho</S.Title>
 
       <S.CartProductsList>
@@ -28,7 +24,7 @@ export const Cart: React.FC<CartProps> = ({ showCart }) => {
       </S.CartProductsList>
 
       <S.CartTotal>
-        <strong>Total: {total} R$</strong>
+        <strong data-testid="total">Total: {total} R$</strong>
       </S.CartTotal>
     </S.Container>
   );
